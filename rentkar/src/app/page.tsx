@@ -17,7 +17,7 @@ export default function LoginPage() {
   const [errors, setErrors] = useState<{ email?: string; password?: string; server?: string }>({})
   const [activeTab, setActiveTab] = useState("admin")
 
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:5000"
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://delivery-management-mulr.onrender.com"
 
   const handleTabChange = (value: string) => {
     setActiveTab(value)

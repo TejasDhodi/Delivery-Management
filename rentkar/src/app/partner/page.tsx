@@ -61,7 +61,7 @@ export default function PartnerDashboard() {
   const [partnerDetailsLoading, setPartnerDetailsLoading] = useState(true);
   const [ordersLoading, setOrdersLoading] = useState(true);
 
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:5000";
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://delivery-management-mulr.onrender.com";
   const token = Cookies.get("token");
 
   const router = useRouter();
